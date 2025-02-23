@@ -15,16 +15,19 @@ exports.appendEmojis = (text)=> {
 
 // API Handler for Telex GET Request
 exports.processMessage = (req, res, next) => {
-    const message = req.query.text;
+      const { message } = req.body;
 
     if (!message) {
-        return res.status(400).json({ error: "No text provided in query parameters" });
+        return res.status(400).json({error: "Missing required fields: message" });
     }
 
     const modifiedMessage = exports.appendEmojis(message);
-
-    res.json({
-        original: message,
-        modified: modifiedMessage
-    });
+    // Build the response payload as per Telex spec
+      const responsePayload = {    
+        message: modifiedMessage,
+        status: "success",
+    
+      };
+      console.log("Body",responsePayload)
+      res.json(responsePayload);
 };
