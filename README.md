@@ -1,42 +1,65 @@
-# Create a README.md file with the provided content
+# **Auto-Emoji Replacer - Telex Integration**  
 
-readme_content = """\
-# Auto-Emoji Replacer Integration
+## **📌 Overview**  
+The **Auto-Emoji Replacer** is a **Modifier Integration** for **Telex**, automatically replacing specific words in messages with corresponding emojis. This enhances user communication by providing a dynamic emoji replacement system.  
 
-A lightweight Telex modifier integration that automatically replaces specific words in incoming messages with corresponding Unicode emojis. This integration enhances message expressiveness and is built using Node.js, organized with the MVC pattern for scalability and maintainability.
+## **🚀 Features**  
+- Replaces predefined words with emojis in messages.  
+- Works as a **Modifier Integration**, modifying messages before they appear in a channel.  
+- Easy to configure and extend with additional emoji mappings.  
 
----
+## **🛠️ Setup Instructions**  
 
-## Table of Contents
+### **1️⃣ Clone the Repository**  
+```sh
+git clone https://github.com/telexorg/auto-emoji-replacer.git
+cd auto-emoji-replacer
+```
 
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Project Structure](#project-structure)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Testing](#testing)
-- [Deployment](#deployment)
-- [Screenshots](#screenshots)
-- [Integration Spec](#integration-spec)
-- [License](#license)
-- [Contact](#contact)
+### **2️⃣ Install Dependencies**  
+```sh
+npm install
+```
 
----
+### **3️⃣ Start the Server**  
+```sh
+npm start
+```
+By default, the server runs on `http://localhost:3000`.
 
-## Overview
+## **🧪 Testing the Integration**  
 
-The **Auto-Emoji Replacer** integration listens for messages sent from Telex and processes them by replacing specific words with corresponding Unicode emojis (from a database of 200+ emojis). The modified message is then returned to the Telex channel. This integration adheres to Telex’s modifier integration requirements by exposing a POST endpoint that accepts a JSON payload.
+### **Test API Locally** (Using cURL or Postman)  
+Send a POST request to test emoji replacement:  
+```sh
+curl -X POST http://localhost:3000/process-message -H "Content-Type: application/json" -d '{"message": "I am happy"}'
+```
+**Expected Response:**  
+```json
+{
+  "Message": "I am happy 😊"
+}
+```
 
----
+## **📝 Telex Integration Configuration**  
 
-## Key Features
+### **1️⃣ Define the Integration JSON**  
+Create an `integration-spec.json` file:  
 
-- **Real-Time Message Modification:** Instantly processes incoming messages and returns a modified version with emojis.
-- **Customizable Emoji Database:** Uses an offline Unicode emoji database that is easily expandable.
-- **Lightweight and Efficient:** Minimal processing overhead for fast responses, even under high load.
-- **Seamless Telex Integration:** Fully conforms to the Telex JSON spec for modifier integrations, making deployment and configuration straightforward.
 
----
+### **2️⃣ Host the Integration JSON**  
+- The `integration.json` was hosted to a publicly accessible server.  
+- The url is `https://auto-emoji-replacer.onrender.com/integration-spec`. 
 
-## Project Structure
+## **📸 Screenshots**  
 
+### **✅ Local Testing (Postman Response)**  
+![Postman Screenshot](path/to/postman_screenshot.png)  
+
+### **✅ Telex Integration Test**  
+![Telex Integration Screenshot](path/to/telex_screenshot.png)  
+
+## **✅ Submission Checklist**  
+✔ Hosted **integration-spec.json** file   
+✔ Working **Telex Integration**  
+✔ Updated **README** with screenshots  
