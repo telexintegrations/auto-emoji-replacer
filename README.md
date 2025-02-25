@@ -54,10 +54,10 @@ Create an `integration-spec.json` file:
 ## **📸 Screenshots**  
 
 ### **✅ Local Testing (Postman Response)**  
-![Postman Screenshot](path/to/postman_screenshot.png)  
+![Postman Screenshot] (screen\pytest.PNG) 
 
 ### **✅ Telex Integration Test**  
-![Telex Integration Screenshot](path/to/telex_screenshot.png)  
+![Telex Integration Screenshot](screen/telex_test.jpg)  
 
 ## **✅ Submission Checklist**  
 ✔ Hosted **integration-spec.json** file   
