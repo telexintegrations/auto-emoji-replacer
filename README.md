@@ -54,7 +54,8 @@ Create an `integration-spec.json` file:
 ## **📸 Screenshots**  
 
 ### **✅ Local Testing (Postman Response)**  
-![Postman Screenshot] (screen\pytest.PNG) 
+ ![pytest](https://github.com/user-attachments/assets/70f6271b-32c8-48b6-8c30-d8f4a68efbf8)
+
 
 ### **✅ Telex Integration Test**  
 ![Telex Integration Screenshot](screen/telex_test.jpg)  
