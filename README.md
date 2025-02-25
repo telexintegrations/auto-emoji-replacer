@@ -53,11 +53,12 @@ Create an `integration-spec.json` file:
 
 ## **📸 Screenshots**  
 
-### **✅ Local Testing (Postman Response)**  
-![Postman Screenshot](path/to/postman_screenshot.png)  
+### **✅ Local Testing (using Pytest)**  
+![pytest](https://github.com/user-attachments/assets/92c321b5-c847-4702-a5f5-28ef3ec9566a)
 
 ### **✅ Telex Integration Test**  
-![Telex Integration Screenshot](path/to/telex_screenshot.png)  
+![telex_test](https://github.com/user-attachments/assets/d3378caa-0628-4497-bd3e-5e46cd7c2cd9)
+
 
 ## **✅ Submission Checklist**  
 ✔ Hosted **integration-spec.json** file   
